@@ -9,7 +9,7 @@ const studentsSlice = createSlice({
     updateStudent: (state, action) => state.map(student =>
       student.id === action.payload.id ? action.payload : student
     ),
-    deleteStudent: (state, action) => state.filter(student => student.id !== action.payload),
+     deleteStudent: (state, action) => state.filter(student => student.id !== action.payload),
   },
 });
 
